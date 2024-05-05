@@ -1,0 +1,16 @@
+{
+  "id": "mig_corqi77ufjs7i8p7gdtg",
+  "parentID": "mig_corqi21f1lrsht4tdd50",
+  "checksum": "1:d74f192bfcda4bc528dbc1f4b80ab61b3ca4f04492c7ee87dbf42f39e5693d16",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "imdb_url",
+          "type": "string"
+        },
+        "table": "drama"
+      }
+    }
+  ]
+}

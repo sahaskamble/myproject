@@ -1,0 +1,19 @@
+{
+  "id": "mig_corqi21f1lrsht4tdd50",
+  "parentID": "mig_corqhs9f1lrsht4tdd40",
+  "checksum": "1:f87c7075ea694bba5376d95d3c425f2c64547208f934f160fce8754405a1aa08",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "image",
+          "type": "file[]",
+          "file[]": {
+            "defaultPublicAccess": true
+          }
+        },
+        "table": "drama"
+      }
+    }
+  ]
+}

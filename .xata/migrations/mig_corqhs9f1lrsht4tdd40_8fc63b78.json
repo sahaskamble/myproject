@@ -1,0 +1,18 @@
+{
+  "id": "mig_corqhs9f1lrsht4tdd40",
+  "parentID": "mig_coripb1f1lrsht4tdb40",
+  "checksum": "1:8fc63b7895f654410f80b98502df5741410285de2d9254723c2e9d08bff8f9c6",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "ratings",
+          "type": "string",
+          "notNull": true,
+          "defaultValue": "5"
+        },
+        "table": "drama"
+      }
+    }
+  ]
+}
