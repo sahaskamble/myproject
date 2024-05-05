@@ -1,0 +1,12 @@
+{
+  "id": "mig_corik4jjhp5tqv7hhphg",
+  "parentID": "mig_corik0fufjs7i8p7gbmg",
+  "checksum": "1:2b5439bc7248b8ff688fde848c56b27bf26dd8100fac14748ec541cc58e28c87",
+  "operations": [
+    {
+      "addTable": {
+        "table": "movies"
+      }
+    }
+  ]
+}

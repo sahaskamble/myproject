@@ -1,0 +1,12 @@
+{
+  "id": "mig_corioevufjs7i8p7gbr0",
+  "parentID": "mig_corincpf1lrsht4tdb30",
+  "checksum": "1:f76c7e9408e1e8ae60246f4d53478d55c5d4e563bed7b415a393e99a0bbb5918",
+  "operations": [
+    {
+      "addTable": {
+        "table": "drama"
+      }
+    }
+  ]
+}

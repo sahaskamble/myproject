@@ -1,0 +1,18 @@
+{
+  "id": "mig_corimd9f1lrsht4tdb10",
+  "parentID": "mig_corikl1f1lrsht4tdb00",
+  "checksum": "1:7597d1ba062fca4741b9ca46c1a8a41de725bd537e2a15597eec90ca61df9adf",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "rating",
+          "type": "float",
+          "notNull": true,
+          "defaultValue": "0.0"
+        },
+        "table": "movies"
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "mig_corikl1f1lrsht4tdb00",
+  "parentID": "mig_corik4jjhp5tqv7hhphg",
+  "checksum": "1:090a7013dc54ff95dea384581b2d6f43518e231cac80f6d46695963f595ad2bf",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "movie",
+          "type": "string",
+          "notNull": true,
+          "defaultValue": "movie_name"
+        },
+        "table": "movies"
+      }
+    }
+  ]
+}

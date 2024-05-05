@@ -1,0 +1,18 @@
+{
+  "id": "mig_coripb1f1lrsht4tdb40",
+  "parentID": "mig_corioevufjs7i8p7gbr0",
+  "checksum": "1:efba1de092c9455d04316bf44590586097589d4fe2de735dd924da0b49c5ae89",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "drama",
+          "type": "string",
+          "notNull": true,
+          "defaultValue": "drama_name"
+        },
+        "table": "drama"
+      }
+    }
+  ]
+}

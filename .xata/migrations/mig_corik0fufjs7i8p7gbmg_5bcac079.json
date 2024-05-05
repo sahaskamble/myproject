@@ -1,0 +1,17 @@
+{
+  "id": "mig_corik0fufjs7i8p7gbmg",
+  "parentID": "mig_corijs7ufjs7i8p7gblg",
+  "checksum": "1:5bcac079f0afb25c68799c924da8620f50ca99afa032b6de6ae96d08de434539",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "password",
+          "type": "string",
+          "unique": true
+        },
+        "table": "users"
+      }
+    }
+  ]
+}

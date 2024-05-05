@@ -1,12 +1,11 @@
 import type { Metadata } from 'next';
+import DarkThemeProvider from '@/components/theme-provider';
 
-import './globals.css'
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
+import '../styles/globals.css'
 
 export const metadata: Metadata = {
-  title: 'Travel',
-  description: 'Travel UI/UX App for Camping',
+  title: 'QuickBook',
+  description: 'Entertainment Ticket Booking',
 }
 
 export default function RootLayout({
@@ -16,12 +15,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
-        <Navbar />
-        <main className="relative overflow-hidden">
+      <body className="max-w-[90%] mx-auto">
+        <DarkThemeProvider
+          attribute='class'
+          defaultTheme='light'
+          enableSystem
+          disableTransitionOnChange
+        >
           {children}
-        </main>
-        <Footer />
+        </DarkThemeProvider>
       </body>
     </html>
   )

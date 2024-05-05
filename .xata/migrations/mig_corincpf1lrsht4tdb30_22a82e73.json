@@ -1,0 +1,18 @@
+{
+  "id": "mig_corincpf1lrsht4tdb30",
+  "parentID": "mig_corimirjhp5tqv7hhpj0",
+  "checksum": "1:22a82e735005223b0807421e3d0dcdeeff3dbd2ade4bfd2453d0577ff9e9e23d",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "imdb_url",
+          "type": "string",
+          "notNull": true,
+          "defaultValue": "https://motivatevalmorgan.com/wp-content/uploads/2016/06/default-movie.jpg"
+        },
+        "table": "movies"
+      }
+    }
+  ]
+}

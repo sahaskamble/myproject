@@ -1,17 +1,12 @@
-import Camp from "@/components/Camp";
-import Features from "@/components/Features";
-import GetApp from "@/components/GetApp";
-import Guide from "@/components/Guide";
-import Hero from "@/components/Hero";
+'use client'
+import Navbar from "@/components/Navbar"
+import Homepage from "@/components/Homepage"
 
 export default function Home() {
   return (
     <>
-      <Hero />
-      <Camp />
-      <Guide />
-      <Features />
-      <GetApp />
+      <Navbar />
+      <Homepage />
     </>
   )
 }

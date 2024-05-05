@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://Darker-Than-Shados-s-workspace-2elv1d.us-east-1.xata.sh/db/Quickbook",
+  "codegen": {
+    "output": "xata.ts"
+  }
+}

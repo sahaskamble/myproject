@@ -1,0 +1,19 @@
+{
+  "id": "mig_corimirjhp5tqv7hhpj0",
+  "parentID": "mig_corimd9f1lrsht4tdb10",
+  "checksum": "1:527416287701a36629f46e2c961a6771a6ff7d3d72ffe130f693ae79668412b9",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "image",
+          "type": "file[]",
+          "file[]": {
+            "defaultPublicAccess": true
+          }
+        },
+        "table": "movies"
+      }
+    }
+  ]
+}
