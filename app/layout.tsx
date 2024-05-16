@@ -1,30 +1,22 @@
-import type { Metadata } from 'next';
-import DarkThemeProvider from '@/components/theme-provider';
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
 
-import '../styles/globals.css'
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'QuickBook',
-  description: 'Entertainment Ticket Booking',
-}
+  title: "QuickBook",
+  description: "Ticket Booking for Movies, Drama and etc... made by Appniche Technologies",
+};
 
 export default function RootLayout({
   children,
-}: {
-  children: React.ReactNode
-}) {
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html lang="en">
-      <body className="max-w-[90%] mx-auto">
-        <DarkThemeProvider
-          attribute='class'
-          defaultTheme='light'
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
-        </DarkThemeProvider>
-      </body>
+      <body className={inter.className,`container mx-auto`}>{children}</body>
     </html>
-  )
+  );
 }

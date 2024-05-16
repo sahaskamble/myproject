@@ -1,37 +1,38 @@
 'use client'
-import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "./ui/breadcrumb";
-import { Button } from "./ui/button";
+
+import Link from "next/link";
 import Logo from "./Logo";
+import { useRouter } from "next/navigation";
 
 export default function Navbar() {
+
+  const router = useRouter()
+
   return (
     <nav className="flex justify-between items-center p-4 bg-transparent backdrop-blur-md">
 
       <Logo />
 
-      <Breadcrumb>
-        <BreadcrumbList>
-          <BreadcrumbItem>
-            <BreadcrumbLink href="/movies">Movies</BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-            <BreadcrumbLink href="/drama">Drama</BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-            <BreadcrumbLink href="/more">Explore more</BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator />
-          <BreadcrumbItem>
-            <BreadcrumbLink href="/contactus">Contact us</BreadcrumbLink>
-          </BreadcrumbItem>
-        </BreadcrumbList>
-      </Breadcrumb>
+      <div className="flex justify-center items-center gap-4">
+        <Link href="/movies">Movies</Link>
+        <span className="w-[2px] h-[20px] bg-green-500"></span>
+        <Link href="/drama">Drama</Link>
+        <span className="w-[2px] h-[20px] bg-green-500"></span>
+        <Link href="/more">Explore more</Link>
+        <span className="w-[2px] h-[20px] bg-green-500"></span>
+        <Link href="/contact">Contact Us</Link>
+      </div>
 
-      <Button variant="default">
+      <button
+        className="bg-green-500 text-xl border border-green-500 text-black p-1 px-4 rounded-lg hover:bg-green-600"
+        onClick={
+          ()=>{
+            router.push('/login')
+          }
+        }
+      >
         Login
-      </Button>
+      </button>
 
     </nav>
   );

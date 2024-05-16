@@ -1,46 +1,36 @@
 'use client'
 
 import { useEffect, useState } from "react"
-import { Card, CardContent, CardTitle, CardFooter, CardHeader } from "./ui/card"
-import { Badge } from "./ui/badge"
-import { Stars } from "lucide-react"
+import { movies } from '@/lib/movies'
 
 export default function Homepage() {
+  
+  const [data, setdata] = useState(movies);
 
-  const [data, setdata]: any = useState([])
-
-  async function fetchdata() {
-    const res = await fetch('https://dummyapi.online/api/movies')
-    const data = await res.json()
-    setdata(data)
-  }
-
-  useEffect(() => {
-
-    fetchdata()
-
-  }, [])
-    
-  console.log(data)
+  console.log(data);
 
   return (
-    <section>
-      <h1 className="text-4xl">Movie Section</h1>
-      <div className="px-8">
+    <section className="w-full mx-auto">
+      <h1 className="text-4xl text-center p-4 my-8 font-semibold">Movie Section</h1>
+      <div className="px-8 flex flex-wrap gap-8">
         {
-          data.map((items: any) => (
-            <Card key={items.id}>
-              <CardHeader>
-                <CardTitle>{items.movie}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <Badge className="w-[80px] p-2 flex justify-center items-center gap-4 text-lg">
-                  <Stars />
-                  {items.rating}
-                </Badge>
-              </CardContent>
-            </Card>
-          ))
+          data.map((items)=>(
+            <div
+              key={items.imdbID}
+              className="w-[300px] h-auto border border-black rounded-[1.5rem]"  
+            >
+              <div className="p-3">
+                <img src={items.Images[0]} alt="movie image" className="w-[300px] h-[250px] rounded-2xl border border-black" />
+                <div className="flex justify-between items-center px-4 py-2">
+                  <div className="flex flex-col items-start justify-center">
+                    <span className="text-xl font-semibold">{items.Title}</span>
+                    <span>{items.Genre}</span>
+                  </div>
+                  <div className="bg-yellow-500 w-[50px] h-[25px] text-lg inline-flex justify-center items-center rounded-lg">{items.imdbRating}</div>
+                </div>
+              </div>
+            </div>
+          )) 
         }
       </div>
     </section>
