@@ -14,7 +14,7 @@ export default function Homepage() {
       <h1 className="text-4xl text-center p-4 my-8 font-semibold">Movie Section</h1>
       <div className="px-8 flex flex-wrap gap-8">
         {
-          data.map((items)=>(
+          data.map((items:any)=>(
             <div
               key={items.imdbID}
               className="w-[300px] h-auto border border-black rounded-[1.5rem]"  
